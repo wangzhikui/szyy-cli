@@ -13,7 +13,7 @@ const getAutoUpdate = require('./getAutoUpdate');
 getAutoUpdate();
 
 function getHelp() {
-    console.log(chalk.green.bold(" Usage : "));
+    console.log(chalk.green.bold("Usage : "));
     console.log();
     console.log(chalk.green(" szyy init \t 🚀 Create a standard microservice front-end project"));
     console.log();
@@ -31,9 +31,11 @@ module.exports = {
         pluginname = options.name;
         if (options.argv.h || options.argv.help) {
             getHelp();
+            return;
         }
         if (options.argv.v || options.argv.version) {
             getVersion();
+            return;
         }
     
         let action = options.argv._[0],

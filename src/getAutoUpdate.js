@@ -8,14 +8,14 @@ const path = require('path');
 
 module.exports = () => {
     let version = require('../package.json').version;
-    console.log(chalk.yellow.bold(` version ${version}`));
+    console.log(chalk.yellow.bold(`version ${version}`));
     console.log(chalk.yellow.bold(`npm install szyy-cli@${version} -g`));
-    // request({ url: 'http://iuap-design-cdn.oss-cn-beijing.aliyuncs.com/static/uba/ucf-cli-version.json' }, (error, response, body) => {
+    // request({ url: 'https://github.com/wangzhikui/szyy-cli/blob/master/src/ucf-cli-version.json' }, (error, response, body) => {
     //     let result = JSON.parse(body);
     //     let version = require('../package.json').version;
-    //     if(result['ucf-cli'] != version){
+    //     if(result['szyy-cli'] != version){
     //         console.log(chalk.yellow.bold(`New version ${version} -> ${result['ucf-cli']}`));
-    //         console.log(chalk.yellow.bold(`npm install ucf-cli@${result['ucf-cli']} -g`));
+    //         console.log(chalk.yellow.bold(`npm install szyy-cli@${result['szyy-cli']} -g`));
     //     }
     // });
 }
