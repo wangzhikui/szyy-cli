@@ -5,7 +5,7 @@
  */
 
 const chalk = require('chalk');
-const getDownloadUcf = require('./getDownloadUcf');
+const getProject = require('./getProject');
 const getAutoUpdate = require('./getAutoUpdate');
 
 //检查更新
@@ -40,7 +40,7 @@ module.exports = {
             param = options.argv._[1];
         switch (action) {
             case 'init':
-                getDownloadUcf(param);
+                getProject(param);
             default:
                 getHelp();
                 break;

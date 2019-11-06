@@ -49,19 +49,19 @@ module.exports = async (folderName = '.') => {
         }
     }
 
-    if (!pathExists.sync(folderName) || folderName == 'ucf-web') {
+    if (!pathExists.sync(folderName) || folderName == 'szyy-web') {
         downloading();
-        // download('iuap-design/ucf-webapp', folderName, function (err) {
-        //     if (!err) {
-        //         pb.render({ completed: num, total: total, status: "Completed." });
-        //         console.log();
-        //         console.log();
-        //         console.log(chalk.cyan(`🚀 Next, install NPM package dependencies 🎁 `));
-        //         console.log(chalk.cyan(`[Tips] : 🏆  cd ${folderName} && npm install && npm start`));
-        //     } else {
+        download('wangzhikui/koa2-bff', folderName, function (err) {
+            if (!err) {
+                pb.render({ completed: num, total: total, status: "Completed." });
+                console.log();
+                console.log();
+                console.log(chalk.cyan(`🚀 Next, install NPM package dependencies 🎁 `));
+                console.log(chalk.cyan(`[Tips] : 🏆  cd ${folderName} && npm install && npm start`));
+            } else {
 
-        //     }
-        // });
+            }
+        });
         // utils.download({
         //     url: "http://iuap-design-cdn.oss-cn-beijing.aliyuncs.com/static/ucf/templates/latest/ucf-webapp-master.zip"
         // }, () => {
