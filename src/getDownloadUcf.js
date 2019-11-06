@@ -1,5 +1,5 @@
 /**
- * SZYY 现在最新工程
+ * SZYY 下载最新工程
  * @author  Allen(wangzhk@yonyou.com)
  * @date    2019-11-01 11:14:35
  */
@@ -20,13 +20,13 @@ module.exports = async (folderName = '.') => {
             name: 'name',
             message: 'Project Name:',
             default: function () {
-                return 'ucf-web';
+                return 'szyy-web';
             }
         }]);
         folderName = inquirerProjectName.name;
     }
 
-    console.log(chalk.green(`\t\t⏳  UCF cloud transfer to local machine ⏳`));
+    console.log(chalk.green(`\t\t⏳  SZYY cloud transfer to local machine ⏳`));
     console.log();
     console.log(chalk.cyan.bold(`[Info] :    🚀 Start downloading UCF project to the current directory 🎁`));
     console.log(chalk.cyan.bold(`Path:${path.resolve('.', folderName)}  🏠`));

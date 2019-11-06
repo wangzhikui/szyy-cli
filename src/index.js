@@ -15,9 +15,9 @@ getAutoUpdate();
 function getHelp() {
     console.log(chalk.green.bold(" Usage : "));
     console.log();
-    console.log(chalk.green(" ucf init \t 🚀 Create a standard microservice front-end project"));
+    console.log(chalk.green(" szyy init \t 🚀 Create a standard microservice front-end project"));
     console.log();
-    console.log(chalk.green(" ucf new app \t ☁️  Create a module page \n \t\t ⚠️  There are two types of pages: separate pages and separate pages containing routing."));
+    console.log(chalk.green(" szyy new app \t ☁️  Create a module page \n \t\t ⚠️  There are two types of pages: separate pages and separate pages containing routing."));
     console.log();
 }
 
